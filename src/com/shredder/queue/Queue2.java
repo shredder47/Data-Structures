@@ -1,4 +1,4 @@
-package com.shredder;
+package com.shredder.queue;
 
 
 //My Impl of Queue
@@ -29,6 +29,7 @@ public class Queue2 {
         long valToRemove = queArray[0];
 
         //After removal from front, the line move forward
+
         for(int i = 0 ; i < rear ; i++){
             queArray[i] = queArray[i+1];
         }

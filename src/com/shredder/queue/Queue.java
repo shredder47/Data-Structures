@@ -1,4 +1,4 @@
-package com.shredder;
+package com.shredder.queue;
 
 public class Queue {
 
