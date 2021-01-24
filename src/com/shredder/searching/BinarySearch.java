@@ -11,7 +11,6 @@ public class BinarySearch {
     //{20, 25, 30,  30, 50, 70, 80, 100}
     //  0   1   2   3   4   5   6    7
     public static int search(int[] arr, int value) {
-
         int start = 0;
         int end = arr.length - 1;
         int index = -1;
@@ -33,6 +32,9 @@ public class BinarySearch {
     }
 
     public static int searchRecursive(int searchValue, int start, int end, int[] arr) {
+
+        System.out.println("\n[ "+ start + "..." + end + " ]");
+
         if (start > end) return -1;
 
         int midPoint = (start + end) / 2;
