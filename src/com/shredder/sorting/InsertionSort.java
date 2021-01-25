@@ -34,13 +34,20 @@ import java.util.Arrays;
 */
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] arr = new int[]{40, 30, 20, 60, 10, 1100, 60};
-        System.out.println(Arrays.toString(insertionSort(arr)));
+
+        int[] arr1 = new int[]{40, 30, 20, 60, 10, 1100, 60};
+        int[] arr2 = new int[]{40, 30, 20, 60, 10, 1100, 60};
+
+        System.out.println(Arrays.toString(insertionSort(arr1)));
+        System.out.println(Arrays.toString(insertionSort2(arr2)));
     }
+
     public static int[] insertionSort(int[] arr) {
+
         for (int sortEndIdx = 0; sortEndIdx < arr.length - 1; sortEndIdx++) {
             //Element outside Sorted Zone
             int elem = arr[sortEndIdx + 1];
+
             for (int i = sortEndIdx; i >= 0; i--) {
                 // First element outsize the sorted zone is tested every time so that if its lesser then its swapped, so that sorted item is
                 // pushed to the sorted zone, and when it comes to sorted zone, its rearranged again for best position
@@ -50,6 +57,25 @@ public class InsertionSort {
                 }
             }
         }
+
         return arr;
     }
+
+    public static int[] insertionSort2(int[] arr) {
+
+        for (int sortEndIdx = 0; sortEndIdx < arr.length - 1; sortEndIdx++) {
+            //Element outside Sorted Zone
+            int elem = arr[sortEndIdx + 1];
+            int j = sortEndIdx;
+
+            while (j >= 0 && arr[j] > elem) {
+                arr[j + 1] = arr[j];
+                arr[j] = elem;
+                j--;
+            }
+        }
+        return arr;
+    }
+
+
 }
