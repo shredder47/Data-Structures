@@ -43,7 +43,7 @@ public class InsertionSort {
     }
 
     public static int[] insertionSort(int[] arr) {
-
+        //The sort index must stop before the last element
         for (int sortEndIdx = 0; sortEndIdx < arr.length - 1; sortEndIdx++) {
             //Element outside Sorted Zone
             int elem = arr[sortEndIdx + 1];
