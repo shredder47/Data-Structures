@@ -24,7 +24,7 @@ public class BinarySearch {
                 if (arr[midPoint] < value) {
                     start = midPoint + 1;
                 } else {
-                    end = end - 1;
+                    end = midPoint - 1;
                 }
             }
         }
