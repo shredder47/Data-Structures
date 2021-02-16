@@ -1,5 +1,6 @@
 package com.shredder.linkedlist;
 
+
 public class CircularLinkedList<T> {
 
     public Node<T> first;
