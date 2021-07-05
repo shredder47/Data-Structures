@@ -1,5 +1,7 @@
 package com.shredder.linkedlist;
 
+import com.shredder.model.Node;
+
 public class DoublyLinkedList<T> {
 
     public Node<T> first;

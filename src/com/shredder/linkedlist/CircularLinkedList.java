@@ -1,6 +1,8 @@
 package com.shredder.linkedlist;
 
 
+import com.shredder.model.Node;
+
 public class CircularLinkedList<T> {
 
     public Node<T> first;
@@ -9,6 +11,8 @@ public class CircularLinkedList<T> {
     public CircularLinkedList() {
     }
 
+
+    //Insert data to First node
     public void insertFirst(T data) {
 
         Node<T> newNode = new Node<>();
@@ -22,7 +26,6 @@ public class CircularLinkedList<T> {
             newNode.next = first;
             first = newNode;
         }
-
     }
 
     public void insertLast(T data) {

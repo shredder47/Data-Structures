@@ -1,5 +1,7 @@
 package com.shredder.linkedlist;
 
+import com.shredder.model.Node;
+
 public class SinglyLinkedList<T> {
 
     public Node<T> first;

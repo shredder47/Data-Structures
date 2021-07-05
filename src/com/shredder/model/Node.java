@@ -1,4 +1,4 @@
-package com.shredder.linkedlist;
+package com.shredder.model;
 
 public class Node<T>{
 
